@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Melhorias nas Escolas</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Melhorias nas Escolas</h1>
+    
+    <button id="btn1">Melhoria 1</button>
+    <button id="btn2">Melhoria 2</button>
+    <button id="btn3">Melhoria 3</button>
+    
+    <div id="content1" class="hidden">
+        <h2>Melhoria 1: Aulas Interativas</h2>
+        <p>Introdução de aulas mais interativas, incluindo atividades práticas e discussões em sala de aula.</p>
+    </div>
+    
+    <div id="content2" class="hidden">
+        <h2>Melhoria 2: Tecnologia Educacional</h2>
+        <p>Uso de tecnologia educacional, como computadores e tablets, para melhorar o processo de aprendizagem dos alunos.</p>
+    </div>
+    
+    <div id="content3" class="hidden">
+        <h2>Melhoria 3: Programas Extracurriculares</h2>
+        <p>Oferecimento de uma variedade de programas extracurriculares, como clubes e atividades esportivas, para enriquecer a experiência dos alunos.</p>
+    </div>
+    
+    <script>
+        document.getElementById("btn1").addEventListener("click", function() {
+            document.getElementById("content1").style.display = "block";
+        });
+        
+        document.getElementById("btn2").addEventListener("click", function() {
+            document.getElementById("content2").style.display = "block";
+        });
+        
+        document.getElementById("btn3").addEventListener("click", function() {
+            document.getElementById("content3").style.display = "block";
+        });
+    </script>
+    </center>
+</body>
+</html>
